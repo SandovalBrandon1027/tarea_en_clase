@@ -1,39 +1,30 @@
 import 'package:flutter/material.dart';
-import 'dart:html' as html; // Importación de la clase html de Flutter
+import 'main/main.dart' as main_app1;
+import 'main2/main.dart' as main_app2;
 
 void main() {
-  runApp(MyApp());
+  runApp(MainApp());
 }
 
-class MyApp extends StatelessWidget {
+class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Projects',
+      title: 'Navigation App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: HomeScreen(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  final List<String> projectUrls = [
-    './main2.dart',
-    'https://flutter.github.io/samples/#',
-    'https://flutter.github.io/samples/#',
-  ];
-
-  void _launchURL(String url) {
-    html.window.open(url, 'new_tab'); // Utilizando la clase html de Flutter para abrir la URL
-  }
-
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Projects'),
+        title: Text('Navigation App'),
       ),
       body: Center(
         child: Column(
@@ -41,21 +32,23 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             ElevatedButton(
               onPressed: () {
-                _launchURL(projectUrls[0]);
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => main_app1.App(),
+                ));
               },
               child: Text('Proyecto 1'),
             ),
-            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                _launchURL(projectUrls[1]);
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => main_app2.MyApp(),
+                ));
               },
               child: Text('Proyecto 2'),
             ),
-            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                _launchURL(projectUrls[2]);
+                // No action needed
               },
               child: Text('Proyecto 3'),
             ),
