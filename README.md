@@ -1,16 +1,9 @@
-# tarea_en_clase
+# Actividad en clase final de flutter
 
-A new Flutter project.
+![image](https://github.com/user-attachments/assets/28bd957e-d9ec-478b-8863-a01eda027830)
 
-## Getting Started
+![image](https://github.com/user-attachments/assets/28bd957e-d9ec-478b-8863-a01eda027830)
 
-This project is a starting point for a Flutter application.
+![image](https://github.com/user-attachments/assets/ee64ccaa-c146-4e70-ad53-b216fd44b99c)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/user-attachments/assets/13f80405-72ea-4195-b05d-9849f94c3193)
